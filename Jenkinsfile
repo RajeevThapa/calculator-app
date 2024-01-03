@@ -1,8 +1,8 @@
 pipeline {
 
     agent any 
-
-    enviroment {
+    
+    environment {
         DOCKERFILE_PATH = 'Dockerfile' //Dockerfile path
         IMAGE_NAME = 'rajeevmagar/calculator' // Dockerhub username and repo
         IMAGE_TAG = "${BUILD_NUMBER}"
