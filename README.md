@@ -41,7 +41,6 @@ If you prefer to run the application using Docker, follow these steps:
    git clone https://github.com/RajeevThapa/calculator-app.git
    cd calculator-app
 
-
 2. Build the Docker image:
    
    ```bash
