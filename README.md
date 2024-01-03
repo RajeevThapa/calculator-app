@@ -59,3 +59,9 @@ Enter a mathematical expression in the input field.
 Click the "Calculate" button to see the result.
 
 Feel free to reach out if you encounter any issues or have further questions!
+
+
+
+![Draft](https://github.com/RajeevThapa/calculator-app/assets/101322664/3367fa34-1e2b-4134-a2c9-583f9bdff9e2)
+
+
