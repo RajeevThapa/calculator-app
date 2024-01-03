@@ -18,20 +18,37 @@ Before you begin, ensure you have the following installed on your machine:
    git clone https://github.com/RajeevThapa/calculator-app.git
    cd calculator-app
 
+2. Install dependencies:
+   npm install
+
+3. Run the Node.js server:
+   npm start
+
+Open your web browser and go to http://localhost:3000. The calculator application should be accessible.
+
 
 ## Using Docker
 
 If you prefer to run the application using Docker, follow these steps:
 
-1. Build the Docker image:
-docker build -t calculator-app .
+1. Clone the repository:
 
-2. Run the Docker container:
-docker run -p 3000:3000 calculator-app
+   ```bash
+   git clone https://github.com/RajeevThapa/calculator-app.git
+   cd calculator-app
 
-The application should be accessible at http://localhost:3000 in your browser.
+
+2. Build the Docker image:
+   docker build -t calculator-app .
+
+3. Run the Docker container:
+   docker run -p 3000:3000 calculator-app
+
+Open your web browser and go to http://localhost:3000. The calculator application should be accessible.
 
 ## Usage
 
 Enter a mathematical expression in the input field.
 Click the "Calculate" button to see the result.
+
+Feel free to reach out if you encounter any issues or have further questions!
