@@ -19,9 +19,13 @@ Before you begin, ensure you have the following installed on your machine:
    cd calculator-app
 
 2. Install dependencies:
+  
+  ```bash
    npm install
 
 3. Run the Node.js server:
+   
+   ```bash   
    npm start
 
 Open your web browser and go to http://localhost:3000. The calculator application should be accessible.
@@ -39,9 +43,13 @@ If you prefer to run the application using Docker, follow these steps:
 
 
 2. Build the Docker image:
+   
+   ```bash   
    docker build -t calculator-app .
 
 3. Run the Docker container:
+   
+   ```bash   
    docker run -p 3000:3000 calculator-app
 
 Open your web browser and go to http://localhost:3000. The calculator application should be accessible.
