@@ -21,8 +21,9 @@ Before you begin, ensure you have the following installed on your machine:
 2. Install dependencies:
   
    ```bash
-   npm install
-
+   npm init -y
+   npm install express socket.io
+   
 3. Run the Node.js server:
    
    ```bash
