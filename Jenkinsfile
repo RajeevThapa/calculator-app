@@ -22,18 +22,19 @@ pipeline {
         stage('Push to Dockerhub') {
             steps {
                 script {
-                // Pushing to Dockerhub
-                docker.withRegistry('', "${DOCKERHUB_CREDENTIALS}") {
-                dockerImage.push()
+                    // Pushing Image
+                    docker.withRegistry('', "${DOCKERHUB_CREDENTIALS}") {
+                        dockerImage.push()
+                    }
                 }
             }
         }
 
         stage('Cleaning up Local Image') {
-            steps {
-                script {
-                // Removing Image
-                sh "docker rmi ${IMAGE_NAME}:${IMAGE_TAG}"
+                steps {
+                    script {
+                    // Removing Image
+                    sh "docker rmi ${IMAGE_NAME}:${IMAGE_TAG}"
                 }
             }
         }
