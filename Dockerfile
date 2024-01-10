@@ -1,17 +1,17 @@
-# Setting the Base Image Name.
-FROM node:14
+# Base Image
+FROM node:current-alpine3.19
 
-# Setting the Working directory.
-WORKDIR /home/app
+# Set the Working Directory
+WORKDIR /home
 
-# Coping files to the app
-COPY . /home/app/
+# Copy the necessary files
+COPY /app /home
 
-# Install Application Dependencies
-RUN npm install
+# Install Dependencies
+RUN npm install -g npm@10.2.5
 
-# Exposing the port on which node.js will run
+# Expose the port
 EXPOSE 3000
 
-# Command to run Node.js app 
-CMD [ "node","server.js"]
+# CMD Runs when the container is created
+CMD [ "node", "server.js" ]

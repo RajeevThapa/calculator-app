@@ -28,6 +28,8 @@ Before you begin, ensure you have the following installed on your machine:
    
    ```bash
    npm start
+      or
+   node server.js
 
 Open your web browser and go to http://localhost:3000. The calculator application should be accessible.
 
