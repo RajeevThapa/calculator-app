@@ -64,8 +64,8 @@ Click the "Calculate" button to see the result.
 Feel free to reach out if you encounter any issues or have further questions!
 
 ## Jenkins Pipeline Screenshot
-
-![Web capture_10-1-2024_115157_10 0 2 15](https://github.com/RajeevThapa/calculator-app/assets/101322664/0fb56245-92d0-4f7a-bbbb-5f3b23f65ddf)
+![Web capture_10-1-2024_131121_10 0 2 15](https://github.com/RajeevThapa/calculator-app/assets/101322664/793c9ac0-a634-4089-95c4-29fad4e9dfe7)
 
 ## Project Overview
 ![Draft](https://github.com/RajeevThapa/calculator-app/assets/101322664/3367fa34-1e2b-4134-a2c9-583f9bdff9e2)
+
