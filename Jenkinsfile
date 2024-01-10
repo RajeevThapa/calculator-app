@@ -14,7 +14,7 @@ pipeline {
             steps{
               script {
                 // Building Image
-                dockerImage = docker.build("${IMAGE_NAME}:${IMAGE_TAG}", "--file ${DOCKERFILE_PATH}")                
+                dockerImage = docker.build("${IMAGE_NAME}:${IMAGE_TAG}", "--file ${DOCKERFILE_PATH} .")                
               }
             }
         }
