@@ -11,25 +11,30 @@ pipeline {
     stages {
 
         stage('Build Image') {
-            script {
+            steps{
+              script {
                 // Building Image
-                dockerImage = docker.build("${IMAGE_NAME}:${IMAGE_TAG}", "--file ${DOCKERFILE_PATH}")
+                dockerImage = docker.build("${IMAGE_NAME}:${IMAGE_TAG}", "--file ${DOCKERFILE_PATH}")                
+              }
             }
         }
 
         stage('Push to Dockerhub') {
-            script {
+            steps {
+                script {
                 // Pushing to Dockerhub
                 docker.withRegistry('', "${DOCKERHUB_CREDENTIALS}") {
-                    dockerImage.push()
+                dockerImage.push()
                 }
             }
         }
 
         stage('Cleaning up Local Image') {
-            script {
+            steps {
+                script {
                 // Removing Image
                 sh "docker rmi ${IMAGE_NAME}:${IMAGE_TAG}"
+                }
             }
         }
     }
