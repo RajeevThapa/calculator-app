@@ -9,6 +9,8 @@ Before you begin, ensure you have the following installed on your machine:
 - Node.js
 - npm (Node Package Manager)
 - Docker
+- kubectl
+- minikube
 
 ## Getting Started
 
@@ -56,12 +58,47 @@ If you prefer to run the application using Docker, follow these steps:
 
 Open your web browser and go to http://localhost:3000. The calculator application should be accessible.
 
-## Usage
+## Using ArgoCD
 
-Enter a mathematical expression in the input field.
-Click the "Calculate" button to see the result.
+1. Check ArgoCD Pods
+   ```
+   kubectl get pods -n argocd
+   ```
 
-Feel free to reach out if you encounter any issues or have further questions!
+2. Check ArgoCD Services
+   ```
+   kubectl get svc -n argocd
+   ```
+
+3. Expose ArgoCD Server using NodePort
+   ```
+   kubectl edit svc argocd-server -n argocd
+   ```
+   Replace type: ClusterIP with type: NodePort to expose ArgoCD to a URL.
+
+4. List Minikube Services and Navigate to ArgoCD URL:
+   ```
+   minikube service list -n argocd
+   ```
+   Visit the URL associated with ArgoCD in your web browser.
+
+5. Retrieve ArgoCD Secret
+   ```
+   kubectl get secret -n argocd
+   ```
+
+6. Copy ArgoCD Initial Admin Password
+   ```
+   kubectl edit secret argocd-initial-admin-secret -n argocd
+   ```
+   copy the password and exit
+
+7. Decode and Use Credentials
+   ```
+   echo <copied_password> | base64 --decode
+   ```
+   Use the username admin and the decoded password to log in to the ArgoCD URL.
+
 
 ## Project Overview
 ![Draft](https://github.com/RajeevThapa/calculator-app/assets/101322664/ba30aedd-8b42-4341-9740-48e94d770775)
