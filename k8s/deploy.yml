@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cal-deployment
-        image: rajeevmagar/calculator-test-node-office:latest
+        image: rajeevmagar/calculator:latest
         ports:
         - containerPort: 80
 

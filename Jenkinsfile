@@ -45,7 +45,7 @@ pipeline {
                 script {
                     sh """
                         cat ${K8S_MANIFEST_PATH}
-                        sed -i 's|image: ${IMAGE_NAME}:.*\$|image: ${IMAGE_NAME}:${IMAGE_TAG}' ${K8S_MANIFEST_PATH}
+                        sed -i 's|image: ${IMAGE_NAME}:.*\$|image: ${IMAGE_NAME}:${IMAGE_TAG}|' ${K8S_MANIFEST_PATH}
                         cat ${K8S_MANIFEST_PATH}
                     """
 
