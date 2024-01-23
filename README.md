@@ -63,9 +63,16 @@ Click the "Calculate" button to see the result.
 
 Feel free to reach out if you encounter any issues or have further questions!
 
-## Jenkins Pipeline Screenshot
-![Web capture_10-1-2024_131121_10 0 2 15](https://github.com/RajeevThapa/calculator-app/assets/101322664/793c9ac0-a634-4089-95c4-29fad4e9dfe7)
-
 ## Project Overview
-![Draft](https://github.com/RajeevThapa/calculator-app/assets/101322664/3367fa34-1e2b-4134-a2c9-583f9bdff9e2)
+![Draft](https://github.com/RajeevThapa/calculator-app/assets/101322664/ba30aedd-8b42-4341-9740-48e94d770775)
+
+
+## Jenkins Pipeline
+![Screenshot from 2024-01-23 22-30-35](https://github.com/RajeevThapa/calculator-app/assets/101322664/844eb249-16e4-4293-88db-6dd93ddd0dd8)
+
+## ArgoCD
+![Screenshot from 2024-01-23 22-31-15](https://github.com/RajeevThapa/calculator-app/assets/101322664/0401926a-f4da-4a75-b779-eb72557d32cc)
+
+
+
 
