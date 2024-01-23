@@ -1,6 +1,6 @@
 # Calculator App
 
-This is a simple calculator application built with Node.js and Docker.
+A Simple Calculator app powered by "node.js." This application simplifies development with included "Dockerfile" and "Jenkinsfile" for automated builds. Elevating efficiency, it seamlessly deploys on Kubernetes manifests using ArgoCD. Ideal for developers seeking simplicity and tech enthusiasts exploring streamlined deployment practices.
 
 ## Prerequisites
 
