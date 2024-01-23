@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cal-deployment
-        image: rajeevmagar/calculator:latest
+        image: rajeevmagar/calculator:v1.0.1
         ports:
         - containerPort: 80
 
